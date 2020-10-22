@@ -6,7 +6,8 @@
 <body>
 	<?php include ('partials/menu.php'); ?>
 	<div class="container">
-	<h2>Riwayat Transaksi</h2>
+		<div class="card">
+	<h2>Riwayat Transaksi</h2><hr>
 	<table>
 		<thead>
 			<tr>
@@ -36,5 +37,7 @@
 		<?php } ?>
 		</tbody>
 	</table>
+		</div>
+	</div>
 </body>
 </html>

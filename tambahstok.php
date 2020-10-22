@@ -6,7 +6,8 @@
 <body>
 	<?php include ('partials/menu.php'); ?>
 	<div class="container">
-	<h2>Tambah Stok Kopi</h2>
+			<div class="card">
+	<h2>Tambah Stok Kopi</h2><hr>
 	<form action="updatestok.php" method="POST">
 		<?php $id = $_GET['id'];?>
 		<?php
@@ -23,11 +24,14 @@
 		<input type="text" name="stok" placeholder="Masukkan Stok" required><br>
 		<input type="hidden" name="stoklama" value="<?php echo $row['stok']; ?>">
 		</div>
+				<div class="card-button">
 		<input class="simpan" type="submit" name="submit" value="Simpan">
 		<input class="reset" type="reset" name="reset" value="Reset">
 		<input class="cancel" type="button" value="Kembali" onclick="history.back(-1)">
 		<?php } ?>
+				</div>
 	</form>
+			</div>
 	</div>
 </body>
 </html>

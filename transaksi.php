@@ -22,7 +22,8 @@
             }
         </script>
     <div class="container">
-	<h2>Transaksi</h2>
+    	<div class="card">
+	<h2>Transaksi</h2><hr>
 	<form action="konfirmasitransaksi.php" method="POST">
 		<!-- <label>ID Kopi : </label>
 		<div class="kolom">
@@ -40,25 +41,20 @@
     		</select>
 		</div>
 		<label>Stok Tersedia : </label>
-		<div class="kolom">
 		<input type="text" id="stok" name="stok" placeholder="Stok Tersedia.." readonly><br>
-		</div>
 		<label>Jumlah : </label>
-		<div class="kolom">
 		<input type="text" id="jumlah" name="jumlah" placeholder="Masukkan Jumlah.." required><br>
-		</div>
 		<label>Harga : </label>
-		<div class="kolom">
 		<input type="text" id="harga" name="harga" placeholder="Harga.." readonly><br>
-		</div>
 		<label>Uang : </label>
-		<div class="kolom">
 		<input type="text" id="uang" name="uang" placeholder="Masukkan Uang.." required><br>
+		<div class="card-button">
+			<input type="submit" name="submit" value="Lanjutkan" class="simpan">
+			<input type="reset" name="reset" value="Reset" class="reset">
 		</div>
-		<input type="submit" name="submit" value="Lanjutkan" class="simpan">
-		<input type="reset" name="reset" value="Reset" class="reset">
 	</form>
+		</div>
 	</div>
-	<!-- <script src="jquery-1.11.3.min.js"></script> -->
+	<script src="jquery-1.11.3.min.js"></script>
 </body>
 </html>
